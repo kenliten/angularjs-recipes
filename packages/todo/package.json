@@ -1,0 +1,19 @@
+{
+  "name": "todo",
+  "version": "1.0.0",
+  "description": "A simple todo app with angularjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kenliten/angularjs-recipes.git"
+  },
+  "author": "kenliten",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/kenliten/angularjs-recipes/issues"
+  },
+  "homepage": "https://github.com/kenliten/angularjs-recipes#readme"
+}
