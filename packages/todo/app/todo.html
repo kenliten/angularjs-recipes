@@ -1,0 +1,30 @@
+<link rel="stylesheet" href="{{TODO.css}}">
+
+<h1 class="deep-orange white-text" data-ng-bind="TODO.name">
+</h1>
+<div class="container padding">
+    <div class="flex margin-xxl">
+        <input type="text" class="col" data-ng-model="TODO.todoDescription" data-ng-keyup="TODO.evalInput($event)">
+        <button class="s primary outline col-2" data-ng-click="TODO.addTodo()">Add Todo</button>
+    </div>
+</div>
+
+<div class="container padding-xxl">
+    <ul data-ng-show="TODO.todoList.length" class="border">
+        <li data-ng-repeat="todo in TODO.todoList">
+            <input type="checkbox" id="todo-{{todo.id}}" data-ng-model="todo.done">
+            <label for="todo-{{todo.id}}" class="done-{{todo.done}}">{{todo.description}}</label>
+            <span class="badge">
+                <span data-ng-click="TODO.removeTodo(todo.id)">&times;</span>
+            </span>
+        </li>
+    </ul>
+</div>
+
+<div data-ng-hide="TODO.todoList.length" class="text-center">
+    <h2>Nothing Here</h2>
+    <img src="{{TODO.image}}" alt="Nothing here">
+    <p>
+        Create your first todo to get started!
+    </p>
+</div>

@@ -1,0 +1,11 @@
+.done-false {
+    color: #212121;
+    text-decoration: none;
+    user-select: none;
+}
+
+.done-true {
+    color: #848484;
+    text-decoration: line-through;
+    user-select: none;
+}

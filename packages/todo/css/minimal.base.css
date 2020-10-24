@@ -1,0 +1,666 @@
+/*
+ * Reset
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
+
+* {
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html,body,div,span,button,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,
+abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,
+strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,
+table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,
+figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,
+time,mark,audio,video {
+  border: 0;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+h1,h2,h3,h4,h5,h6{
+  padding: 8px 4px;
+}
+
+h1 { font-size: 3em; }
+
+h2 { font-size: 2em; }
+
+h3 { font-size: 1.8em; }
+
+h4 { font-size: 1.4em; }
+
+h5 { font-size: 1.2em; }
+
+h6 { font-size: 1em; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+body {
+  font-family: 'Roboto' sans-serif;
+  line-height: 1.15;
+}
+
+ol, ul { list-style: none; }
+
+blockquote, q {
+  background-color: #EEEEEE;
+  border-left: 4px solid #E0E0E0;
+  padding: 16px;
+  color: #636363;
+  margin: 16px;
+  display: block;
+  font-style: italic;
+  font-weight: 100;
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after { content: '"'; }
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    text-align: left;
+    width: 100%;
+}
+
+hr {
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    border-top: 1px solid #BDBDBD;
+    height: 0;
+    margin: 8px auto;
+    width: 100%;
+}
+
+:focus { outline: none; }
+
+a {
+  color: #616161;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #424242;
+  text-decoration: underline;
+}
+
+:disabled, :disabled:hover, .disabled, .disabled:hover{ cursor: not-allowed; }
+
+/*
+ * Colors
+ */
+
+.black-text {
+    color: #000;
+}
+
+.black-hover-text:hover {
+    color: #000;
+}
+
+.black {
+    background-color: #000;
+}
+
+.black-hover:hover {
+    background-color: #000;
+}
+
+.red-text {
+    color: #F44336;
+}
+
+.red-hover-text:hover {
+    color: #F44336;
+}
+
+.red {
+    background-color: #F44336;
+}
+
+.red-hover:hover {
+    background-color: #F44336;
+}
+
+.red-pale {
+    background-color: #FFCDD2;
+}
+
+.red-pale-hover:hover {
+    background-color: #FFCDD2;
+}
+
+.pink-text {
+    color: #E91E63;
+}
+
+.pink-hover-text:hover {
+    color: #E91E63;
+}
+
+.pink {
+    background-color: #E91E63;
+}
+
+.pink-hover:hover {
+    background-color: #E91E63;
+}
+
+.pink-pale {
+    background-color: #F8BBD0;
+}
+
+.pink-pale-hover:hover {
+    background-color: #F8BBD0;
+}
+
+.purple-text {
+    color: #9C27B0;
+}
+
+.purple-hover-text:hover {
+    color: #9C27B0;
+}
+
+.purple {
+    background-color: #9C27B0;
+}
+
+.purple-hover:hover {
+    background-color: #9C27B0;
+}
+
+.purple-pale {
+    background-color: #E1BEE7;
+}
+
+.purple-pale-hover:hover {
+    background-color: #E1BEE7;
+}
+
+.deep-purple-text {
+    color: #673AB7;
+}
+
+.deep-purple-hover-text:hover {
+    color: #673AB7;
+}
+
+.deep-purple {
+    background-color: #673AB7;
+}
+
+.deep-purple-hover:hover {
+    background-color: #673AB7;
+}
+
+.deep-purple-pale {
+    background-color: #D1C4E9;
+}
+
+.deep-purple-pale-hover:hover {
+    background-color: #D1C4E9;
+}
+
+.indigo-text {
+    color: #3F51B5;
+}
+
+.indigo-hover-text:hover {
+    color: #3F51B5;
+}
+
+.indigo {
+    background-color: #3F51B5;
+}
+
+.indigo-hover:hover {
+    background-color: #3F51B5;
+}
+
+.indigo-pale {
+    background-color: #C5CAE9;
+}
+
+.indigo-pale-hover:hover {
+    background-color: #C5CAE9;
+}
+
+.blue-text {
+    color: #2196F3;
+}
+
+.blue-hover-text:hover {
+    color: #2196F3;
+}
+
+.blue {
+    background-color: #2196F3;
+}
+
+.blue-hover:hover {
+    background-color: #2196F3;
+}
+
+.blue-pale {
+    background-color: #BBDEFB;
+}
+
+.blue-pale-hover:hover {
+    background-color: #BBDEFB;
+}
+
+.light-blue-text {
+    color: #03A9F4;
+}
+
+.light-blue-hover-text:hover {
+    color: #03A9F4;
+}
+
+.light-blue {
+    background-color: #03A9F4;
+}
+
+.light-blue-hover:hover {
+    background-color: #03A9F4;
+}
+
+.light-blue-pale {
+    background-color: #B3E5FC;
+}
+
+.light-blue-pale-hover:hover {
+    background-color: #B3E5FC;
+}
+
+.cyan-text {
+    color: #00BCD4;
+}
+
+.cyan-hover-text:hover {
+    color: #00BCD4;
+}
+
+.cyan {
+    background-color: #00BCD4;
+}
+
+.cyan-hover:hover {
+    background-color: #00BCD4;
+}
+
+.cyan-pale {
+    background-color: #B2EBF2;
+}
+
+.cyan-pale-hover:hover {
+    background-color: #B2EBF2;
+}
+
+.teal-text {
+    color: #009688;
+}
+
+.teal-hover-text:hover {
+    color: #009688;
+}
+
+.teal {
+    background-color: #009688;
+}
+
+.teal-hover:hover {
+    background-color: #009688;
+}
+
+.teal-pale {
+    background-color: #B2DFDB;
+}
+
+.teal-pale-hover:hover {
+    background-color: #B2DFDB;
+}
+
+.green-text {
+    color: #4CAF50;
+}
+
+.green-hover-text:hover {
+    color: #4CAF50;
+}
+
+.green {
+    background-color: #4CAF50;
+}
+
+.green-hover:hover {
+    background-color: #4CAF50;
+}
+
+.green-pale {
+    background-color: #C8E6C9;
+}
+
+.green-pale-hover:hover {
+    background-color: #C8E6C9;
+}
+
+.light-green-text {
+    color: #00C853;
+}
+
+.light-green-hover-text:hover {
+    color: #00C853;
+}
+
+.light-green {
+    background-color: #00C853;
+}
+
+.light-green-hover:hover {
+    background-color: #00C853;
+}
+
+.light-green-pale {
+    background-color: #DCEDC8;
+}
+
+.light-green-pale-hover:hover {
+    background-color: #DCEDC8;
+}
+
+.lime-text {
+    color: #C6FF00;
+}
+
+.lime-hover-text:hover {
+    color: #C6FF00;
+}
+
+.lime {
+    background-color: #C6FF00;
+}
+
+.lime-hover:hover {
+    background-color: #C6FF00;
+}
+
+.lime-pale {
+    background-color: #F0F4C3;
+}
+
+.lime-pale-hover:hover {
+    background-color: #F0F4C3;
+}
+
+.yellow-text {
+    color: #FFEB3B;
+}
+
+.yellow-hover-text:hover {
+    color: #FFEB3B;
+}
+
+.yellow {
+    background-color: #FFEB3B;
+}
+
+.yellow-hover:hover {
+    background-color: #FFEB3B;
+}
+
+.yellow-pale {
+    background-color: #FFF9C4;
+}
+
+.yellow-pale-hover:hover {
+    background-color: #FFF9C4;
+}
+
+.amber-text {
+    color: #FFC107;
+}
+
+.amber-hover-text:hover {
+    color: #FFC107;
+}
+
+.amber {
+    background-color: #FFC107;
+}
+
+.amber-hover:hover {
+    background-color: #FFC107;
+}
+
+.amber-pale {
+    background-color: #FFECB3;
+}
+
+.amber-pale-hover:hover {
+    background-color: #FFECB3;
+}
+
+.orange-text {
+    color: #FF9800;
+}
+
+.orange-hover-text:hover {
+    color: #FF9800;
+}
+
+.orange {
+    background-color: #FF9800;
+}
+
+.orange-hover:hover {
+    background-color: #FF9800;
+}
+
+.orange-pale {
+    background-color: #FFE0B2;
+}
+
+.orange-pale-hover:hover {
+    background-color: #FFE0B2;
+}
+
+.deep-orange-text {
+    color: #FF5722;
+}
+
+.deep-orange-hover-text:hover {
+    color: #FF5722;
+}
+
+.deep-orange {
+    background-color: #FF5722;
+}
+
+.deep-orange-hover:hover {
+    background-color: #FF5722;
+}
+
+.deep-orange-pale {
+    background-color: #FFCCBC;
+}
+
+.deep-orange-pale-hover:hover {
+    background-color: #FFCCBC;
+}
+
+.brown-text {
+    color: #5D4037;
+}
+
+.brown-hover-text:hover {
+    color: #5D4037;
+}
+
+.brown {
+    background-color: #5D4037;
+}
+
+.brown-hover:hover {
+    background-color: #5D4037;
+}
+
+.brown-pale {
+    background-color: #D7CCC8;
+}
+
+.brown-pale-hover:hover {
+    background-color: #D7CCC8;
+}
+
+.gray-text {
+    color: #BDBDBD;
+}
+
+.gray-hover-text:hover {
+    color: #BDBDBD;
+}
+
+.gray {
+    background-color: #BDBDBD;
+}
+
+.gray-hover:hover {
+    background-color: #BDBDBD;
+}
+
+.gray-pale {
+    background-color: #F5F5F5;
+}
+
+.gray-pale-hover:hover {
+    background-color: #F5F5F5;
+}
+
+.white-text {
+    color: #fff;
+}
+
+.white-hover-text:hover {
+    color: #fff;
+}
+
+.white {
+    background-color: #fff;
+}
+
+.white-hover:hover {
+    background-color: #fff;
+}
+
+.blue-gray-text {
+    color: #607D8B;
+}
+
+.blue-gray-hover-text:hover {
+    color: #607D8B;
+}
+
+.blue-gray {
+    background-color: #607D8B;
+}
+
+.blue-gray-hover:hover {
+    background-color: #607D8B;
+}
+
+.blue-gray-pale {
+    background-color: #CFD8DC;
+}
+
+.blue-gray-pale-hover:hover {
+    background-color: #CFD8DC;
+}
+
+/*
+ * Utilities
+ */
+
+.cont {
+    display: block;
+    padding: 0 16px;
+}
+
+.panel {
+    display: block;
+    padding: 0 16px;
+    margin: 16px 0;
+    width: 100%;
+}
+
+.hero-cont {
+    display: block;
+    height: 100vh;
+    position: relative;
+    width: 100%
+}
+
+.vtop {
+    position: absolute;
+    top: 0;
+}
+
+.vtop-l {
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+
+.vtop-r {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.vbottom {
+    position: absolute;
+    bottom: 0;
+}
+
+.vbottom-l {
+    left: 0;
+    position: absolute;
+    bottom: 0;
+}
+
+.vbottom-r {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.vmiddle {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.vmiddle-l {
+    left: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.vmiddle-r {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}

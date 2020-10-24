@@ -1,0 +1,487 @@
+.black-text {
+    color: #000;
+}
+
+.black-hover-text:hover {
+    color: #000;
+}
+
+.black {
+    background-color: #000;
+}
+
+.black-hover:hover {
+    background-color: #000;
+}
+
+.red-text {
+    color: #F44336;
+}
+
+.red-hover-text:hover {
+    color: #F44336;
+}
+
+.red {
+    background-color: #F44336;
+}
+
+.red-hover:hover {
+    background-color: #F44336;
+}
+
+.red-pale {
+    background-color: #FFCDD2;
+}
+
+.red-pale-hover:hover {
+    background-color: #FFCDD2;
+}
+
+.pink-text {
+    color: #E91E63;
+}
+
+.pink-hover-text:hover {
+    color: #E91E63;
+}
+
+.pink {
+    background-color: #E91E63;
+}
+
+.pink-hover:hover {
+    background-color: #E91E63;
+}
+
+.pink-pale {
+    background-color: #F8BBD0;
+}
+
+.pink-pale-hover:hover {
+    background-color: #F8BBD0;
+}
+
+.purple-text {
+    color: #9C27B0;
+}
+
+.purple-hover-text:hover {
+    color: #9C27B0;
+}
+
+.purple {
+    background-color: #9C27B0;
+}
+
+.purple-hover:hover {
+    background-color: #9C27B0;
+}
+
+.purple-pale {
+    background-color: #E1BEE7;
+}
+
+.purple-pale-hover:hover {
+    background-color: #E1BEE7;
+}
+
+.deep-purple-text {
+    color: #673AB7;
+}
+
+.deep-purple-hover-text:hover {
+    color: #673AB7;
+}
+
+.deep-purple {
+    background-color: #673AB7;
+}
+
+.deep-purple-hover:hover {
+    background-color: #673AB7;
+}
+
+.deep-purple-pale {
+    background-color: #D1C4E9;
+}
+
+.deep-purple-pale-hover:hover {
+    background-color: #D1C4E9;
+}
+
+.indigo-text {
+    color: #3F51B5;
+}
+
+.indigo-hover-text:hover {
+    color: #3F51B5;
+}
+
+.indigo {
+    background-color: #3F51B5;
+}
+
+.indigo-hover:hover {
+    background-color: #3F51B5;
+}
+
+.indigo-pale {
+    background-color: #C5CAE9;
+}
+
+.indigo-pale-hover:hover {
+    background-color: #C5CAE9;
+}
+
+.blue-text {
+    color: #2196F3;
+}
+
+.blue-hover-text:hover {
+    color: #2196F3;
+}
+
+.blue {
+    background-color: #2196F3;
+}
+
+.blue-hover:hover {
+    background-color: #2196F3;
+}
+
+.blue-pale {
+    background-color: #BBDEFB;
+}
+
+.blue-pale-hover:hover {
+    background-color: #BBDEFB;
+}
+
+.light-blue-text {
+    color: #03A9F4;
+}
+
+.light-blue-hover-text:hover {
+    color: #03A9F4;
+}
+
+.light-blue {
+    background-color: #03A9F4;
+}
+
+.light-blue-hover:hover {
+    background-color: #03A9F4;
+}
+
+.light-blue-pale {
+    background-color: #B3E5FC;
+}
+
+.light-blue-pale-hover:hover {
+    background-color: #B3E5FC;
+}
+
+.cyan-text {
+    color: #00BCD4;
+}
+
+.cyan-hover-text:hover {
+    color: #00BCD4;
+}
+
+.cyan {
+    background-color: #00BCD4;
+}
+
+.cyan-hover:hover {
+    background-color: #00BCD4;
+}
+
+.cyan-pale {
+    background-color: #B2EBF2;
+}
+
+.cyan-pale-hover:hover {
+    background-color: #B2EBF2;
+}
+
+.teal-text {
+    color: #009688;
+}
+
+.teal-hover-text:hover {
+    color: #009688;
+}
+
+.teal {
+    background-color: #009688;
+}
+
+.teal-hover:hover {
+    background-color: #009688;
+}
+
+.teal-pale {
+    background-color: #B2DFDB;
+}
+
+.teal-pale-hover:hover {
+    background-color: #B2DFDB;
+}
+
+.green-text {
+    color: #4CAF50;
+}
+
+.green-hover-text:hover {
+    color: #4CAF50;
+}
+
+.green {
+    background-color: #4CAF50;
+}
+
+.green-hover:hover {
+    background-color: #4CAF50;
+}
+
+.green-pale {
+    background-color: #C8E6C9;
+}
+
+.green-pale-hover:hover {
+    background-color: #C8E6C9;
+}
+
+.light-green-text {
+    color: #00C853;
+}
+
+.light-green-hover-text:hover {
+    color: #00C853;
+}
+
+.light-green {
+    background-color: #00C853;
+}
+
+.light-green-hover:hover {
+    background-color: #00C853;
+}
+
+.light-green-pale {
+    background-color: #DCEDC8;
+}
+
+.light-green-pale-hover:hover {
+    background-color: #DCEDC8;
+}
+
+.lime-text {
+    color: #C6FF00;
+}
+
+.lime-hover-text:hover {
+    color: #C6FF00;
+}
+
+.lime {
+    background-color: #C6FF00;
+}
+
+.lime-hover:hover {
+    background-color: #C6FF00;
+}
+
+.lime-pale {
+    background-color: #F0F4C3;
+}
+
+.lime-pale-hover:hover {
+    background-color: #F0F4C3;
+}
+
+.yellow-text {
+    color: #FFEB3B;
+}
+
+.yellow-hover-text:hover {
+    color: #FFEB3B;
+}
+
+.yellow {
+    background-color: #FFEB3B;
+}
+
+.yellow-hover:hover {
+    background-color: #FFEB3B;
+}
+
+.yellow-pale {
+    background-color: #FFF9C4;
+}
+
+.yellow-pale-hover:hover {
+    background-color: #FFF9C4;
+}
+
+.amber-text {
+    color: #FFC107;
+}
+
+.amber-hover-text:hover {
+    color: #FFC107;
+}
+
+.amber {
+    background-color: #FFC107;
+}
+
+.amber-hover:hover {
+    background-color: #FFC107;
+}
+
+.amber-pale {
+    background-color: #FFECB3;
+}
+
+.amber-pale-hover:hover {
+    background-color: #FFECB3;
+}
+
+.orange-text {
+    color: #FF9800;
+}
+
+.orange-hover-text:hover {
+    color: #FF9800;
+}
+
+.orange {
+    background-color: #FF9800;
+}
+
+.orange-hover:hover {
+    background-color: #FF9800;
+}
+
+.orange-pale {
+    background-color: #FFE0B2;
+}
+
+.orange-pale-hover:hover {
+    background-color: #FFE0B2;
+}
+
+.deep-orange-text {
+    color: #FF5722;
+}
+
+.deep-orange-hover-text:hover {
+    color: #FF5722;
+}
+
+.deep-orange {
+    background-color: #FF5722;
+}
+
+.deep-orange-hover:hover {
+    background-color: #FF5722;
+}
+
+.deep-orange-pale {
+    background-color: #FFCCBC;
+}
+
+.deep-orange-pale-hover:hover {
+    background-color: #FFCCBC;
+}
+
+.brown-text {
+    color: #5D4037;
+}
+
+.brown-hover-text:hover {
+    color: #5D4037;
+}
+
+.brown {
+    background-color: #5D4037;
+}
+
+.brown-hover:hover {
+    background-color: #5D4037;
+}
+
+.brown-pale {
+    background-color: #D7CCC8;
+}
+
+.brown-pale-hover:hover {
+    background-color: #D7CCC8;
+}
+
+.gray-text {
+    color: #BDBDBD;
+}
+
+.gray-hover-text:hover {
+    color: #BDBDBD;
+}
+
+.gray {
+    background-color: #BDBDBD;
+}
+
+.gray-hover:hover {
+    background-color: #BDBDBD;
+}
+
+.gray-pale {
+    background-color: #F5F5F5;
+}
+
+.gray-pale-hover:hover {
+    background-color: #F5F5F5;
+}
+
+.white-text {
+    color: #fff;
+}
+
+.white-hover-text:hover {
+    color: #fff;
+}
+
+.white {
+    background-color: #fff;
+}
+
+.white-hover:hover {
+    background-color: #fff;
+}
+
+.blue-gray-text {
+    color: #607D8B;
+}
+
+.blue-gray-hover-text:hover {
+    color: #607D8B;
+}
+
+.blue-gray {
+    background-color: #607D8B;
+}
+
+.blue-gray-hover:hover {
+    background-color: #607D8B;
+}
+
+.blue-gray-pale {
+    background-color: #CFD8DC;
+}
+
+.blue-gray-pale-hover:hover {
+    background-color: #CFD8DC;
+}
