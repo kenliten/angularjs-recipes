@@ -1,25 +1,61 @@
+<!-- 
+    This file is the todo app holder
+    in a separated file to create a scope
+    easier to mantain, this way is a module based project
+    here are loaded two new resources: todo.css and 381-256x256.jpg 
+    if this file isn't loaded means that the download size decrease
+    other aproach for this working method
+ -->
 <link rel="stylesheet" href="{{TODO.css}}">
 
-<h1 class="deep-orange white-text" data-ng-bind="TODO.name">
-</h1>
+<!-- 
+    optionally, you can manage the titles and info directly in this file, but
+    I prefer to keep it in the controller scope, so if I need to repeat
+    don't need to retype the same words one more time
+ -->
+<h1 class="deep-orange white-text" data-ng-bind="TODO.name"></h1>
 <div class="container padding">
     <div class="flex margin-xxl">
+        <!-- 
+            Here we're binding todoDescription and evalInput to the text input
+            Everything you write in the text input, is automatically saved to todoDescription
+            and each time you type, the evalInput ask if you hit the Enter key
+            if that is the case, addTodo is executed.
+
+            The addTodo method is binded to the button, so when you click the button
+            addTodo is executed
+         -->
         <input type="text" class="col" data-ng-model="TODO.todoDescription" data-ng-keyup="TODO.evalInput($event)">
         <button class="s primary outline col-2" data-ng-click="TODO.addTodo()">Add Todo</button>
     </div>
 </div>
 
 <div class="container padding-xxl">
+    <!-- 
+        this ul element is shown only if todoList.length is greater than 0
+        and for each single todo within the todoList is created a new li element inside
+     -->
     <ul data-ng-show="TODO.todoList.length" class="border">
+        <!-- 
+            the ng-repeat directive is, just as say,
+            repeating the li element for each todo in the todoList
+         -->
         <li data-ng-repeat="todo in TODO.todoList">
             <input type="checkbox" id="todo-{{todo.id}}" data-ng-model="todo.done">
             <label for="todo-{{todo.id}}" class="done-{{todo.done}}">{{todo.description}}</label>
             <span class="badge">
-                <span data-ng-click="TODO.removeTodo(todo.id)">&times;</span>
+                <!-- 
+                    here is called the removeTodo method if this span is clicked
+                 -->
+                <span class="pointer" data-ng-click="TODO.removeTodo(todo.id)">&times;</span>
             </span>
         </li>
     </ul>
 </div>
+
+<!-- 
+    This last section is shown only if the todoList length is 0
+ -->
 
 <div data-ng-hide="TODO.todoList.length" class="text-center">
     <h2>Nothing Here</h2>

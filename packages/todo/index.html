@@ -1,5 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="todoApp">
+<!-- 
+    ng-app directive is the most important thing here
+    this is the first thing angular search in the html
+    this directive tells angular the scope you want it run inside
+ -->
+<html lang="en" data-ng-app="todoApp">
 
 <head>
     <title>Todo App</title>
@@ -7,6 +12,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- 
+        linking minimal library styles
+     -->
     <link rel="stylesheet" href="./css/minimal.base.css">
     <link rel="stylesheet" href="./css/minimal.utils.css">
     <link rel="stylesheet" href="./css/minimal.buttons.css">
@@ -14,10 +22,20 @@
 
 <body>
 
+    <!-- 
+        the ng-controller is to say where is supposed to work the controller referenced within
+        optionally you can change its name like here TodoController will be called as TODO
+     -->
     <div data-ng-controller="TodoController as TODO">
         <div data-ng-include="TODO.template"></div>
     </div>
 
+    <!-- 
+        all app files:
+            angular first
+            the app or module todoApp
+            and lastly the TodoController
+     -->
     <script type="text/javascript" src="./js/angular.min.js"></script>
     <script type="text/javascript" src="./app/todoApp.js"></script>
     <script type="text/javascript" src="./app/TodoController.js"></script>
